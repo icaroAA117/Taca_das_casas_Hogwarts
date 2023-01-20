@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>taça das casas</title>
+</head>
+<body>
+    <div class="slytherin"></div>
+    <div class="ravenclaw"></div>
+    <div class="grynffindor"></div>
+    <div class="hufflepuff"></div>
+
+    <div class="barra1">
+        <div></div>
+    </div>
+    <div class="barra2">
+        <div></div>
+    </div>
+
+    <div class="barra3">
+        <div></div>
+    </div>
+
+    <div class="barra4">
+        <div></div>
+    </div>
+    <!--************************************************************************************-->
+    <!-- Botão Slitherin--> 
+    <main class="sli">
+        <h1 id="contadorSli">0</h1>
+        <button id="BotSli" onclick="incrementarS()">+</button>
+        <button id="BotSli" onclick="decrementarS()">-</button>
+        <button id="BotSli" onclick="zerarS()">zerar</button>
+    </main>
+  <!--************************************************************************************-->
+     <!-- Botão Corvinal--> 
+    <main class="rav">
+        <h1 id="contadorRav">0</h1>
+        <button id="BotCor" onclick="incrementarC()">+</button>
+        <button id="BotCor" onclick="decrementarC()">-</button>
+        <button id="BotCor" onclick="zerarC()">zerar</button>
+    </main>
+  <!--************************************************************************************-->
+    <!--Grinfinoria-->
+    <main class="gry">
+    <h1 id="contadorGrif">0</h1>
+    <button id="BotGri" onclick="incrementarG()">+</button>
+    <button id="BotGri" onclick="decrementarG()">-</button>
+    <button id="BotGri" onclick="zerarG()">zerar</button>
+    </main>
+  <!--************************************************************************************-->
+    <!--Lufa-lufa-->
+    <main class="huf">
+        <h1 id="contadorLufa">0</h1>
+        <button id="BotLufa" onclick="incrementarLufa()">+</button>
+        <button id="BotLufa" onclick="decrementarLufa()">-</button>
+        <button id="BotLufa" onclick="zerarLufa()">zerar</button>
+        </main>
+
+    <script>
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Contador Sonserina
+        let contadorSli = document.getElementById("contadorSli");
+        contadorSli.innerText = localStorage.getItem("contadorSli") || "0";
+        function incrementarS() {
+            contadorSli.innerText = parseInt(contadorSli.innerText) + 1;
+            salvarContadorS();
+        }
+        function decrementarS() {
+            contadorSli.innerText = parseInt(contadorSli.innerText) - 1;
+            salvarContadorS();
+        }
+        function zerarS(){
+            contadorSli.innerText = "0";
+            salvarContadorS();
+        }
+        function salvarContadorS() {
+            localStorage.setItem("contadorSli", contadorSli.innerText);
+        }
+////////////////////////////////////////////////////////////////////////////////////////////////////
+        // contador corvinal
+                let contadorRav = document.getElementById("contadorRav");
+                contadorRav.innerText = localStorage.getItem("contadorRav") || "0";
+        function incrementarC() {
+            contadorRav.innerText = parseInt(contadorRav.innerText) + 1;
+            salvarContadorCor();
+        }
+        function decrementarC() {
+            contadorRav.innerText = parseInt(contadorRav.innerText) - 1;
+            salvarContadorCor();
+        }
+        function zerarC(){
+            contadorRav.innerText = "0";
+            salvarContadorCor();
+        }
+        function salvarContadorCor() {
+            localStorage.setItem("contadorRav", contadorRav.innerText);
+        }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Grifinoria
+        let contadorGrif = document.getElementById("contadorGrif");
+        contadorGrif.innerText = localStorage.getItem("contadorGrif") || "0";
+        function incrementarG() {
+            contadorGrif.innerText = parseInt(contadorGrif.innerText) + 1;
+            salvarContadorG();
+        }
+        function decrementarG() {
+            contadorGrif.innerText = parseInt(contadorGrif.innerText) - 1;
+            salvarContadorG();
+        }
+        function zerarG(){
+            contadorGrif.innerText = "0";
+            salvarContadorG();
+        }
+        function salvarContadorG() {
+            localStorage.setItem("contadorGrif", contadorGrif.innerText);
+        }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //Hufflepuf
+        let contadorLufa = document.getElementById("contadorLufa");
+        contadorLufa.innerText = localStorage.getItem("contadorLufa") || "0";
+        function incrementarLufa() {
+            contadorLufa.innerText = parseInt(contadorLufa.innerText) + 1;
+            salvarContadorLufa();
+        }
+        function decrementarLufa() {
+            contadorLufa.innerText = parseInt(contadorLufa.innerText) - 1;
+            salvarContadorLufa();
+        }
+        function zerarLufa(){
+            contadorLufa.innerText = "0";
+            salvarContadorLufa();
+        }
+        function salvarContadorLufa() {
+            localStorage.setItem("contadorLufa", contadorLufa.innerText);
+        }
+
+    </script>
+</body>
+</html>

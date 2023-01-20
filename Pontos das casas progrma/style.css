@@ -1,0 +1,220 @@
+
+  body{
+    background-image: url('imagens/hogwarts-legacy-uhdpaper.com-hd-3.2832.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+  
+  .slytherin {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(10, 99, 10);
+    background-image: url('imagens/Slytherin.webp');
+    background-repeat: no-repeat;
+    background-size: 87%;
+    background-position: center;
+    border-radius: 10px;
+  }
+
+  .ravenclaw{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color:rgb(45, 45, 207);
+    background-image: url('imagens/Ravenclaw.webp');
+    background-repeat: no-repeat;
+    background-size: 87%;
+    background-position: center;
+    border-radius: 10px;
+  }
+
+  .grynffindor{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color:rgb(202, 13, 13);
+    background-image: url('imagens/Gryffindor.webp');
+    background-repeat: no-repeat;
+    background-size: 87%;
+    background-position: center;
+    border-radius: 10px;
+  }
+
+  .hufflepuff{
+    display: inline-block;
+
+    height: 200px;
+    width: 200px;
+    background-color:rgb(206, 206, 14);
+    background-image: url('imagens/Hufflepuff.webp');
+    background-size: 87%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+
+  
+  /* Barras */
+
+ /* BARRA 1 */
+  .barra1{
+    position: absolute;
+    top: 60%;
+    left: 106px;
+    
+    transform: translate(-50%,-50%);
+    width: 192px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: aliceblue;
+  }
+  
+  .barra1 div{
+    height: 100%;
+    left: 100px;
+    border-radius: 10px;
+    background-color: green;
+  }
+  /* BARRA 2 */
+  .barra2{
+    position: absolute;
+    top: 60%;
+    left: 310px;
+    transform: translate(-50%,-50%);
+    width: 192px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: aliceblue;
+  }
+  
+  .barra2 div{
+    height: 100%;
+    border-radius: 10px;
+    background-color: blue;
+  }
+ /* BARRA 3 */
+ .barra3{
+    position: absolute;
+    top: 60%;
+    left: 514px;
+    transform: translate(-50%,-50%);
+    width: 192px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: aliceblue;
+  }
+  
+  .barra3 div{
+    height: 100%;
+    border-radius: 10px;
+    background-color: red;
+  }
+
+  /* BARRA 4 */
+  .barra4{
+    position: absolute;
+    top: 60%;
+    left: 720px;
+    transform: translate(-50%,-50%);
+    width: 192px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: aliceblue;
+  }
+  
+  .barra4 div{
+    height: 100%;
+    border-radius: 10px;
+    background-color: yellow;
+  }
+
+  /* contadores */
+
+  .sli{
+    /* posição*/
+    position: absolute;
+    top: 60%;
+    left: 106px;
+    /*estilo*/
+    transform: translate(-50%,-50%);
+    width: 192px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: green;
+    text-align: center;
+    font-size: 37px;
+    font-style: oblique;
+  }
+  button#BotSli{
+    border-radius: 5px;
+    background-color: darkgreen;
+    cursor: pointer;
+  }
+
+/* corvinal*/
+  main.rav{
+    /* posição*/
+    position: absolute;
+    top: 60%;
+    left: 310px;
+    transform: translate(-50%,-50%);
+    /*estilo*/
+    width: 192px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: blue;
+    text-align: center;
+    font-size: 37px;
+    font-style: oblique;
+  }
+  button#BotCor{
+    border-radius: 5px;
+    background-color: rgb(7, 10, 158);
+    cursor: pointer;
+  }
+
+  /* Gryffindor*/
+  main.gry{
+    /* posição*/
+    position: absolute;
+    top: 60%;
+    left: 514px;
+    transform: translate(-50%,-50%);
+    /*estilo*/
+    width: 192px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+    font-size: 37px;
+    font-style: oblique;
+  }
+  button#BotGri{
+    border-radius: 5px;
+    background-color: rgb(170, 11, 11);
+    cursor: pointer;
+  }
+
+    /* Gryffindor*/
+    main.huf{
+      /* posição*/
+      position: absolute;
+      top: 60%;
+      left: 720px;
+      transform: translate(-50%,-50%);
+      /*estilo*/
+      width: 192px;
+      height: 300px;
+      border-radius: 10px;
+      background-color: yellow;
+      text-align: center;
+      font-size: 37px;
+      font-style: oblique;
+    }
+    button#BotLufa{
+      border-radius: 5px;
+      background-color: rgb(199, 199, 16);
+      cursor: pointer;
+    }
